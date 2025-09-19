@@ -46,10 +46,10 @@ def environnement_optimal(temp, poussiere, humidite):
         return "Environnement non optimal"
 
 if __name__ == "__main__":
-    #TODO : demander le nombre d'ordis [avec gestion d'erreur]
+    #TODO : demander le nombre d'ordi [avec gestion d'erreur]
     #TODO : créer 3 listes (temperatures, poussiere, humidites)
 
-    #TODO : Pour nombre d'ordis
+    #TODO : Pour nombre d'ordi
         #TODO : Demander temperature, poussiere et humidite [avec gestion d'erreur]
         #TODO : Ajouter les 3 valeurs dans leurs listes respectives
 
