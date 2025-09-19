@@ -3,36 +3,40 @@ def environnement_optimal(temp, poussiere, humidite):
     Vérifie si l'environnement d'un ordinateur est optimal.
 
     Paramètres :
-    - temp : température en °C (int ou float)
+    - temp : température
     - poussiere : niveau de poussière ("faible", "moyen", "élevé")
-    - humidite : taux d’humidité en % (int ou float)
+    - humidite : humidité
 
     Retour :
-    - "Tout est sous contrôle!" si toutes les conditions sont respectées
-    - "Environnement non optimal" sinon (après avoir affiché les problèmes détectés)
-    """
+    - "Tout est sous contrôle!" si tout est bon
+    - "Environnement non optimal" les problèmes sinon
+"""
 
     alerte = False
 
-    # Vérification température
+# Vérification température
     if temp < 18:
         print("Température trop basse")
         alerte = True
     elif temp > 27:
         print("Température trop élevée")
-        alerte = True
+
 
     # Vérification humidité
-    if humidite <= 30:
-        print("Humidité trop basse")
+    if humidite < 18:
+        print("Température trop basse")
         alerte = True
-    elif humidite >= 50:
-        print("Humidité trop élevée")
+    elif humidite > 27:
+        print("Température trop élevée")
+
+    if poussiere != "faible":
+        print("Pas assez de poussière")
         alerte = True
+
 
     # Vérification poussière
     if poussiere != "faible":
-        print("Trop de poussière")
+        print("Pas assez de poussière")
         alerte = True
 
     # Retour final
@@ -41,9 +45,8 @@ def environnement_optimal(temp, poussiere, humidite):
     else:
         return "Environnement non optimal"
 
-
 if __name__ == "__main__":
     temp = float(input("Entrez la température: "))
     poussiere = input("Entrez le niveau de poussière: ")
     humidite = float(input("Entrez l'humidité: "))
-    print(environnement_optimal(temp, poussiere, humidite))
+    print(environnement_optimal(25, "faible", 40))
