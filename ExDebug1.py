@@ -46,6 +46,16 @@ def environnement_optimal(temp, poussiere, humidite):
         return "Environnement non optimal"
 
 if __name__ == "__main__":
+    #TODO : demander le nombre d'ordis [avec gestion d'erreur]
+    #TODO : créer 3 listes (temperatures, poussiere, humidites)
+
+    #TODO : Pour nombre d'ordis
+        #TODO : Demander temperature, poussiere et humidite [avec gestion d'erreur]
+        #TODO : Ajouter les 3 valeurs dans leurs listes respectives
+
+    #TODO : Pour nombre d'ordis
+        #TODO : Verifier l'environnement : utiliser la fonction et afficher le resultat
+
     temp = float(input("Entrez la température: "))
     poussiere = input("Entrez le niveau de poussière: ")
     humidite = float(input("Entrez l'humidité: "))
