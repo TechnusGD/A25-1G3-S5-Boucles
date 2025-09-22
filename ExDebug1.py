@@ -20,6 +20,7 @@ def environnement_optimal(temp, poussiere, humidite):
         alerte = True
     elif temp > 27:
         print("Température trop élevée")
+        alerte = True
 
 
     # Vérification humidité
